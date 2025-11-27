@@ -67,7 +67,7 @@ form.addEventListener("submit", async (e) => {
     message.textContent = "✅ Tarjeta guardada con éxito";
   } catch (err) {
     console.error(err);
-    message.textContent = "❌ Error al procesar la tarjeta";
+    message.textContent = "Someone said";
   } finally {
     submitBtn.disabled = false;
   }

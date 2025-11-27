@@ -9,16 +9,21 @@ body {
     background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
     color: #f0f0f0;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    /* antes: center */
-    min-height: 100dvh;
-    /* mejor para móvil que 100vh */
-    padding: 20px;
     line-height: 1.6;
 }
 
+/* Contenedor que ocupa toda la pantalla y centra la card */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* fondo a pantalla completa */
+    padding: 20px;
+}
+
+/* La card vuelve a ser un cuadro “normal”, no pantalla completa */
 .card {
     position: relative;
     background: rgba(255, 255, 255, 0.08);
@@ -27,8 +32,6 @@ body {
     border-radius: 24px;
     width: 100%;
     max-width: 460px;
-    min-height: calc(100dvh - 40px);
-    /* ocupa casi toda la pantalla */
     box-shadow:
         0 20px 40px rgba(0, 0, 0, 0.3),
         0 0 0 1px rgba(255, 255, 255, 0.05);
