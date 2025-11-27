@@ -11,7 +11,7 @@ body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    /* evitar scroll horizontal por el zoom */
+    /* evitar scroll horizontal */
 }
 
 /* Contenedor que ocupa toda la pantalla y centra la card */
@@ -187,22 +187,17 @@ button:disabled {
     opacity: 0.5;
 }
 
-/* ZOOM y ajustes específicos para móvil */
+/* Ajustes específicos para móvil: card más grande, menos margen */
 @media (max-width: 480px) {
     .container {
-        padding: 0;
-        /* menos margen, más espacio para la card */
+        padding: 10px;
     }
 
     .card {
         padding: 26px 20px;
         border-radius: 20px;
         max-width: 520px;
-        /* más ancho relativo */
-        transform: scale(1.08);
-        /* zoom visual */
-        transform-origin: center;
-        /* centrado */
+        /* un poco más grande */
     }
 
     h1 {
@@ -222,8 +217,6 @@ button:disabled {
 @media (max-width: 360px) {
     .card {
         padding: 22px 16px;
-        transform: scale(1.05);
-        /* un poco menos para pantallas ultra pequeñas */
     }
 
     h1 {
