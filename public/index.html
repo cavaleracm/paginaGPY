@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Agregar tarjeta</title>
+  <script src="https://js.stripe.com/v3/"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Asociar tarjeta</h1>
+    <div class="divider"></div>
+
+    <form id="payment-form">
+      <label>Datos de la tarjeta</label>
+      <div id="card-element"></div>
+
+      <button id="submit">Guardar tarjeta</button>
+      <div id="payment-message"></div>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
